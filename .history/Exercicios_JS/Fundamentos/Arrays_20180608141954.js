@@ -1,0 +1,1 @@
+const valores = [7.7,]
