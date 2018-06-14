@@ -1,0 +1,1 @@
+const saudacao = 'Opa'; //Contexto léxico
