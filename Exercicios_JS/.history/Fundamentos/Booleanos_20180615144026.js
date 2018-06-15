@@ -9,7 +9,6 @@ console.log(!!isAtivo);
 console.log(!isAtivo);
 
 console.log("Os verdadeiros...");
-
 console.log(!!3);
 console.log(!!-1);
 console.log(!!"Jujuba");
@@ -19,7 +18,6 @@ console.log(!!Infinity);
 console.log(!!(isAtivo = true));
 
 console.log("Os falsos...");
-
 console.log(!!0);
 console.log(!!"");
 console.log(!!null);
