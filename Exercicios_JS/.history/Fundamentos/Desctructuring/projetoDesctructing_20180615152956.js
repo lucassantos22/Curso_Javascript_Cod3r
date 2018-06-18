@@ -1,8 +1,8 @@
-function test({um=1,dois=1,tres=1,quatro=1}){
+function test({um,dois,tres,quatro}){
     let arrayInicial = [];
-    arrayInicial.push(um, dois, tres, quatro);
+    arrayInicial.push(pessoa1.idade,pessoa2.idade,pessoa3.idade,pessoa4.idade);
     const arrayFinal = arrayInicial.filter((element)=>{
-        return element>=18;
+        return element>18;
     })
     const response = {response:arrayFinal};
     return response;

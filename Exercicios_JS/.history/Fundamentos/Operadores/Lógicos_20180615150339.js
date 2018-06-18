@@ -11,8 +11,8 @@ function compras(trabalho1=1, trabalho2=1){
 }
 
 trabalhos = {
-    trabalho1:true,
-    trabalho2:true
+    trabalho1:false,
+    trabalho2:false
 }
 
 console.log(compras(trabalhos));

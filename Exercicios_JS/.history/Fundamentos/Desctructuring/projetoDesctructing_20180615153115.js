@@ -1,4 +1,4 @@
-function test({um=1,dois=1,tres=1,quatro=1}){
+function test({um=1,dois=1,tres=99,quatro=1}){
     let arrayInicial = [];
     arrayInicial.push(um, dois, tres, quatro);
     const arrayFinal = arrayInicial.filter((element)=>{

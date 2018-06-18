@@ -1,4 +1,4 @@
-function test({um=1,dois=1,tres=1,quatro=1}){
+function test({um=1,dois=1,tres=99,quatro=1}){
     let arrayInicial = [];
     arrayInicial.push(um, dois, tres, quatro);
     const arrayFinal = arrayInicial.filter((element)=>{
@@ -35,4 +35,4 @@ const {pessoa4:{idade:quatro}} = cadastros;
 
 console.log(`Os elementos do array principal são: ${um}, ${dois}, ${tres}, e ${quatro}.`);
 
-console.log(test({um,dois,tres,quatro}));
+console.log(test({um,dois,quatro}));

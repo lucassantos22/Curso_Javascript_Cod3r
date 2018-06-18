@@ -35,4 +35,4 @@ const {pessoa4:{idade:quatro}} = cadastros;
 
 console.log(`Os elementos do array principal são: ${um}, ${dois}, ${tres}, e ${quatro}.`);
 
-console.log(test({um,dois,tres,quatro}));
+console.log(test({um,dois,,quatro}));

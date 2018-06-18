@@ -1,8 +1,8 @@
-function test({um=1,dois=1,tres=1,quatro=1}){
+function test({idade1=1,idade2=2,idade3=3,idade4=4}){
     let arrayInicial = [];
-    arrayInicial.push(um, dois, tres, quatro);
+    arrayInicial.push(idade1,idade2,idade3,idade4);
     const arrayFinal = arrayInicial.filter((element)=>{
-        return element>=18;
+        return element>18;
     })
     const response = {response:arrayFinal};
     return response;
@@ -28,11 +28,7 @@ const cadastros = {
     }, 
 }
 
-const {pessoa1:{idade:um}} = cadastros;
-const {pessoa2:{idade:dois}} = cadastros;
-const {pessoa3:{idade:tres}} = cadastros;
-const {pessoa4:{idade:quatro}} = cadastros;
+const {pessoa1:{idade:um}} = cadastros
+console.log(`Os elementos do array principal são: ${um}.`);
 
-console.log(`Os elementos do array principal são: ${um}, ${dois}, ${tres}, e ${quatro}.`);
-
-console.log(test({um,dois,tres,quatro}));
+console.log(test({object}));

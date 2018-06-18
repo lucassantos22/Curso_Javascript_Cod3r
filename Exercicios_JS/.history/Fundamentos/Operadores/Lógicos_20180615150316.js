@@ -15,4 +15,4 @@ trabalhos = {
     trabalho2:true
 }
 
-console.log(compras(trabalhos));
+compras(trabalhos);
