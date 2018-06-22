@@ -1,0 +1,3 @@
+function soBoaNoticia(nota){
+    
+}

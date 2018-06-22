@@ -1,0 +1,3 @@
+const imprimirResultado = function oi(){
+
+}

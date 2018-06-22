@@ -1,0 +1,1 @@
+const imprimirResultado = function(nota)
