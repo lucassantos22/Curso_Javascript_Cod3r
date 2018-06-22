@@ -25,9 +25,8 @@ const imprimirResultado = function(nota){
             console.log(`Reprovado com a nota ${nota}.`);
         break;
         default:
-            console.log(`A nota ${nota} é inválida.`);
+            console.log(`Nota ${nota} é inválida.`)
     }
 } 
 
 imprimirResultado(7);
-imprimirResultado(-7);

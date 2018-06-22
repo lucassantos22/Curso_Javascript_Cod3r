@@ -21,13 +21,13 @@ const imprimirResultado = function(nota){
         case 3:
         case 2:
         case 1:
+        default:
+            console.log(`Nota ${nota} é inválida.`);
         case 0:
             console.log(`Reprovado com a nota ${nota}.`);
         break;
-        default:
-            console.log(`A nota ${nota} é inválida.`);
     }
 } 
 
-imprimirResultado(7);
-imprimirResultado(-7);
+imprimirResultado(0);
+//imprimirResultado(-7);
