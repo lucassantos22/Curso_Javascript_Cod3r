@@ -37,3 +37,20 @@ function multiplicacao(){
 }
 
 console.log(multiplicacao(2,3));
+
+function teste(){
+    let soma=0;
+    for(i in arguments){
+        soma = soma + arguments[i]
+     }
+     console.log(soma);
+}
+
+teste(20,2,3);
+
+function construtor(nome,idade){
+    this.nome = nome;
+    this.idade = idade;
+}
+
+new construtor("Luiza",18);
