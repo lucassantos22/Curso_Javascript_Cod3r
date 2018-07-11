@@ -1,0 +1,3 @@
+function getInteiroAleatorioEntre(min, max){
+    
+}
