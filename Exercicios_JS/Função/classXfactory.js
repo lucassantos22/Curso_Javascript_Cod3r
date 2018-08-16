@@ -2,6 +2,11 @@ class Pessoa{
     constructor(nome,idade){
         this.nome = nome;
         this.idade = idade
+        this.steps();
+    }
+
+    steps(){
+        this.falar();
     }
     
     falar(){
@@ -11,7 +16,6 @@ class Pessoa{
 }
 
 const p1 = new Pessoa("Lucas",18);
-p1.falar();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
