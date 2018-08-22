@@ -16,3 +16,10 @@ Objeto = {
 }
 
 Objeto.processamento() // Foco passou a ser o objeto, antes era a função.
+
+// Principios importantes 
+
+//1) Abstração
+//2) Encapsulamento
+//3) Herança (Prototype)
+//4) Polimorfismo
