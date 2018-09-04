@@ -31,3 +31,35 @@ console.log(Sequencia.valor);
 Sequencia.valor = 110;
 console.log(Sequencia.valor);
 Sequencia.valor= 10;
+
+const pessoa = {
+    _nome:"",
+    _idade:"",
+    _profissao:"",
+    get nome(){
+        return this._nome;
+    },
+    get idade(){
+        return this._idade;
+    },
+    get profissao(){
+        return this._profissao
+    },
+    set nome(nome){
+        this._nome = nome;
+    },
+    set idade(idade){
+        this._idade = idade;
+    },
+    set profissao(profissao){
+        this._profissao = profissao;
+    },
+}
+
+pessoa.nome = "Lucas";
+pessoa.idade = 18;
+pessoa.profissao = "Gerente e coordenador de projetos"
+
+console.log(pessoa.nome);
+console.log(pessoa.idade);
+console.log(pessoa.profissao);
