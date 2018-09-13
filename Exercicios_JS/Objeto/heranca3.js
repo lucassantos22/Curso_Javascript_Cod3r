@@ -5,7 +5,6 @@ const pai = {
 
 const filha1 = Object.create(pai);
 filha1.nome = 'Ana';
-filha1.corCabelo;
 
 console.log(filha1.corCabelo);
 
