@@ -11,4 +11,4 @@ console.log(JSON.stringify(obj));
 
 //console.log(JSON.parse("{'a':1,'b':2,'c':3}""));
 console.log(JSON.parse('{"a":1,"b":2,"c":3}'));
-console.log(JSON.parse('{"a":1, "b":"string", "c":true, "d":{}, "e":[1,"s"]}'));
+console.log(JSON.parse('{"a":1, "b":"string", "c":true, "d":{"nome":"Lucas","idade":18}, "e":[1,"s"]}'));

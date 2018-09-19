@@ -43,5 +43,9 @@ filha.nome=('Ana');
 console.log(filha);
 
 //JSON
-const infoJSON = JSON.parse('{"info":"Exemplo de JSON"}');
+const a =1;
+const infoJSON = JSON.parse(`{"info":${a}}`);
 console.log(infoJSON.info);
+
+const infoJSON2 = JSON.parse(`{"info":"Exemplo"}`);
+console.log(infoJSON2.info);
