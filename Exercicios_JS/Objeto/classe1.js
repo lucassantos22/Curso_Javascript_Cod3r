@@ -4,7 +4,6 @@ class Lancamento{
         this.nome = nome;
         this.valor = valor;
     }
-
 }
 
 class CicloFinanceiro{
