@@ -5,12 +5,18 @@ const alunos = [
     {nome:"Ana",nota:8.7,bolsista:true}      
 ];
 
-const bolsistas = alunos.filter(el=>{
-    return el.bolsista == true;
+const bolsistasArr = alunos.map(el=>{
+    return el.bolsista;
 });
 
-if(bolsistas.length == alunos.length){
-    console.log("Todos os alunos são bolsistas.");
+const bolsistas = bolsistasArr.reduce((anterior, atual)=>{
+    return anterior + atual;
+});
+
+if(bolsistas==bolsistasArr.length){
+    console.log("Todos são bolsistas");
+}else if(bolsistas==0){
+    console.log("Nenhum é bolsista.")
 }else{
-    console.log("Nem todos os alunos são bolsistas.");
+    console.log(`${bolsistas} de ${bolsistasArr.length} são bolsistas.`);
 }
