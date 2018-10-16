@@ -1,13 +1,14 @@
 const axios = require('axios');
 const url = 'http://files.cod3r.com.br/curso-js/funcionarios.json';
 
-const pessoas = "";
+const mulherChinesa = (pessoa)=>pessoa.pais=='China' && pessoa.genero=='F';
+const menorSalario  = (pessoa,pessoaAtual)=>pessoa.salario<pessoaAtual.salario ? pessoa : pessoaAtual;
+
 axios.get(url).then(response=>{
-   console.log(response.data);
+    const pessoas = response.data;
+    const mulherChinesaMenorSalario = pessoas
+        .filter(mulherChinesa)
+        .reduce(menorSalario);
+        
+        console.log(mulherChinesaMenorSalario);
 });
-const mulheresChinesas = pessoas.filter(el=>{
-    return el.genero == 'F' && el.pais=="China"
-});
-
-console.log(mulheresChinesas);
-
