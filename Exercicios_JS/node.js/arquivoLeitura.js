@@ -1,6 +1,9 @@
 const fs = require('fs');
 const caminho = __dirname + "/arquivo.json"
 
+const arquivo = require('./arquivo.json');
+console.log(arquivo);
+
 // Síncrono
 
 const conteudo = fs.readFileSync(caminho, "utf-8");
@@ -16,4 +19,4 @@ fs.readFile(caminho,"utf-8",(err, conteudo)=>{
 fs.readdir(__dirname, (err, conteudo)=>{
     console.log("Conteúdos da pasta.");
     console.log(conteudo);
-})
+});
