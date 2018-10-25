@@ -2,8 +2,10 @@
   "name": "functionarios",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "funcionarios.js",
   "scripts": {
+    "start": "node funcionarios",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lucas Santos",
