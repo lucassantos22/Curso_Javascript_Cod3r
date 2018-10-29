@@ -11,6 +11,8 @@ const JSONParser = carrinho.map((el)=>{
     return JSON.parse(el);
 });
 
+console.log(JSONParser);
+
 const apenasPreco = JSONParser.map(el=>{
     return el.preco;
 });
