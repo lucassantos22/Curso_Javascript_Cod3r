@@ -7,7 +7,7 @@ const carrinho = [
 
 // Retornar um array apenas com os preços
 
-const JSONParser = carrinho.map((el)=>{
+const JSONParser = carrinho.map(el=>{
     return JSON.parse(el);
 });
 
