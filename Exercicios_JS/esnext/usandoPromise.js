@@ -39,9 +39,9 @@ getNome = letra=>{
 
 Promise.all([getNome('A'), getNome('B')])
     .then(turmas=>{
-        return [].concat(...turmas)
+        return [].concat(...turmas);
     })
     .then(nomeAlunos=>{
-        return nomeAlunos.map(nomeAlunos => nomeAlunos.nome)
+        return nomeAlunos.map(nomeAlunos => nomeAlunos.nome);
     })
     .then(resultado=>console.log(resultado));
