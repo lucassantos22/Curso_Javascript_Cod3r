@@ -1,0 +1,30 @@
+<tag>
+    <!--Comentário--> 
+    <bla>
+        <opa>Texto</opa>
+        <opa>Texto</opa>
+        <opa>Texto</opa>
+        <opa>Texto</opa>
+        <opa>Texto</opa>
+    </bla>
+</tag>
+
+<tag/> <meta/> <input/> <br/>
+
+<tag param1="valor1" param2='valor2'>
+    <!-- Corpo na tag-->
+</tag>
+
+<tag param1="valor1" param2='valor2'/>
+
+<input type="text" cpfMask>
+
+document.querySelectorAll('a').forEach(link=>{
+    const conteudo = document.getElementById('conteudo');
+    link.onclick = function(e){
+        e.preventDefault();
+        fetch(link.getAttribute('href'))
+            .then(value=> value.text())
+            .then(html=>conteudo.innerHTML = html)
+    }
+});
