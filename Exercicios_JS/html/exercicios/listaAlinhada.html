@@ -2,10 +2,10 @@
 
 <ul class="tree">
     <li>
-        backend
+        <span class="expands">backend</span>
         <ul>
             <li>
-                app
+                <span class="expands">app</span>
                 <ul>
                     <li>produto.js</li>
                     <li>usuario.js</li>
@@ -13,7 +13,7 @@
                 </ul>
             </li>
             <li>
-                config
+                <span class="expands">config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -23,9 +23,9 @@
         </ul>
     </li>
     <li>
-        frontend
+        <span class="expands">frontend</span>
         <ul>
-            <li>public
+            <li><span class="expands">public</span>
                 <ul>
                     <li>index.html</li>
                     <li>app.css</li>
@@ -38,7 +38,14 @@
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
 <script>
-    console.log('Árvore...') 
-    /* Não vai funcionar, pois no script do index, estamos passando apenas o '.text()' do conteúdo, não carregando os scripts de dentro.
-    Funcionará apenas carregando o arquivo 'listaAlinhada.html' separadamente. */
+    document.querySelectorAll('.expands').forEach(pastas=>{
+        pastas.onclick = function(e){
+            const ul = pastas.nextElementSibling;
+            if(ul.style.display=="none"){
+                ul.style.display="block"
+            }else{
+                ul.style.display='none';
+            }
+        }
+    })
 </script>

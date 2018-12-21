@@ -19,12 +19,3 @@
 
 <input type="text" cpfMask>
 
-document.querySelectorAll('a').forEach(link=>{
-    const conteudo = document.getElementById('conteudo');
-    link.onclick = function(e){
-        e.preventDefault();
-        fetch(link.getAttribute('href'))
-            .then(value=> value.text())
-            .then(html=>conteudo.innerHTML = html)
-    }
-});
