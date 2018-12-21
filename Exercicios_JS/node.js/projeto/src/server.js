@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const bancoDeDados = require('./bancoDeDados');
 
-app.use(bodyParser.urlencoded( {extend:true}));
+app.use(bodyParser.urlencoded({extend:true}));
 
 app.get("/",(req, res, next)=>{
     res.send('Welcome!'); // Converter para JSON
