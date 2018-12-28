@@ -10,12 +10,13 @@
     <div id="app">
         <p>{{contador}}</p>
         <button v-on:click="add">+1</button>
-        <button @click="contador -=2 ">-2</button>
+        <button @click="contador -= 2 ">-2</button>
         <p @mousemove='atualizarPosicao'>
             Coordenadas: {{x}} e {{y}}.
             <span @mousemove="stop">Aqui não</span>
         </p>
-        <input type="text" @keyup.enter="alerta">
+        <input v-model:type="nome" @keyup.enter="alerta">
+        <p>{{nome}}</p>
     </div>
 
     <script>
@@ -25,7 +26,8 @@
             data:{
                 x:0,
                 y:0,
-                contador: 0
+                contador: 0,
+                nome:''
             },
             methods: {
                 add(){
@@ -39,7 +41,7 @@
                     e.stopPropagation();
                 },
                 alerta(){
-                    alert('Alerta');
+                    alert(this.nome);
                 }
             },
         });
