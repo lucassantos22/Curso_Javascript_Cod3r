@@ -13,8 +13,25 @@
 </head>
 <body class="exercicio">
 
+    <div id="app">
+        <span @click="alterarCor" :class="{vermelho:aplicarCor}">Teste</span>
+    </div>
+
     <script>
-        // ...
+
+        new Vue({
+            el:"#app",
+            data:{
+                aplicarCor:false,
+                vermelho:'vermelho'
+            },
+            methods:{
+                alterarCor(){
+                    this.aplicarCor = !this.aplicarCor
+                }
+            }
+        });
+
     </script>
 </body>
 </html>
