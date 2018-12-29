@@ -23,7 +23,8 @@
         <a href wm-nav="exercicios/listaAlinhada.html">04 - Lista Alinhada</a> |
         <a href wm-nav="exercicios/links.html">05 - Links</a> |
         <a href wm-nav="exercicios/tabela.html">06 - Tabela</a> |
-        <a href wm-nav="exercicios/form/form.html">07 - Formulário</a>
+        <a href wm-nav="exercicios/form/form.html">07 - Formulário</a> |
+        <a href wm-nav="exercicios/imagens.html">08 - Imagens</a> |
     </nav>
     <section id="conteudo"></section>
     <footer>
@@ -31,13 +32,14 @@
     </footer>
 
     <script>
+
         const conteudo = document.getElementById('conteudo');
         document.querySelectorAll('a').forEach(link=>{
             link.onclick = function(e){
                 e.preventDefault();
                 fetch(link.getAttribute('wm-nav'))
-                    .then(conteudo => conteudo.text())
-                    .then(conteudoText => conteudo.innerHTML = conteudoText);
+                .then(conteudo=>conteudo.text())
+                .then(conteudoText=>conteudo.innerHTML = conteudoText);
             }
         });
         
