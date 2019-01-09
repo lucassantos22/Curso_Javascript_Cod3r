@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Componente</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+    <div id="app">
+        <contador inicial="7"></contador>
+    </div>
+
+    <script>
+        Vue.component('contador',{
+            props:['inicial'],
+            data: function(){
+                return{
+                    contador:this.inicial
+                }
+            },
+            methods:{
+                incrementar(){
+                    ++this.contador;
+                },
+                diminuir(){
+                    --this.contador;
+                }
+            },
+            template:`
+                <div>
+                    <p>{{contador}}</p>
+                    <button @click="incrementar">Incrementar</button>
+                    <button @click="diminuir">Diminuir</button>
+                </div>
+            `
+        })
+        new Vue({
+            el:"#app"
+        })
+    </script>
+
+</body>
+</html>
